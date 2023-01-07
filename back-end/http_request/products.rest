@@ -32,7 +32,7 @@ Content-Type: application/json
 
 
 {
-  "image": "https://sdmall.uz/images/just-img-10.jpg"
+  "image_id": 1
 }
 
 

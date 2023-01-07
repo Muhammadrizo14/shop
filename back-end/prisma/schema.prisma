@@ -10,9 +10,23 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-
-
-
+model UploadedFile {
+  id           Int       @id @default(autoincrement())
+  fieldname    String
+  originalname String
+  encoding     String
+  mimetype     String
+  destination  String
+  filename     String    @unique
+  nameMini     String    @unique @default("")
+  path         String
+  size         Int
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt()
+  deletedAt    DateTime?
+  entity_id    Int?
+  entity_type  String?
+}
 
 model Category {
   id      Int       @id @default(autoincrement())
@@ -20,13 +34,11 @@ model Category {
   product Product[]
 }
 
-
-
 model Product {
   id          Int      @id @default(autoincrement())
   title       String
   description String   @db.Text
-  image       String   @db.Text
+  image_id    Int?
   price       String
   sale        String
   brend       String
@@ -36,8 +48,18 @@ model Product {
   season      String
   createdAt   DateTime @default(now())
 
-  categoryId  Int
+  categoryId Int
 
-  Category    Category @relation(fields: [categoryId], references: [id])
+  Category Category @relation(fields: [categoryId], references: [id])
 }
 
+model User {
+    id                  Int             @default(autoincrement()) @id
+    name                String
+    lastname            String
+    password            String
+    phonenumber         String
+    image               String?
+
+    createdAt             DateTime        @default(now())
+}
