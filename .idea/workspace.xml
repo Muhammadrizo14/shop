@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="14ad055e-204b-4e41-bd45-182b70e896c4" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/back-end/http_request/products.rest" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/http_request/products.rest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/prisma/schema.prisma" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/prisma/schema.prisma" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/products/products.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/src/products/products.controller.ts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2JybwhT8ZorK0XOtb3K7z6Ce8RT" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "ts.external.directory.path": "C:\\Users\\Muhammadrizo\\Documents\\practicise\\shopapp\\back-end\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="HTTP Request.products | Get Products by Id">
+    <configuration name="products | Get Products by Id" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/back-end/http_request/products.rest" index="2" requestIdentifier="Get Products by Id" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="products | UPDATE Products" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/back-end/http_request/products.rest" index="4" requestIdentifier="UPDATE Products" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="start:dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/back-end/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start:dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="HTTP Request.products | Get Products by Id" />
+      <item itemvalue="HTTP Request.products | UPDATE Products" />
+      <item itemvalue="npm.start:dev" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP Request.products | Get Products by Id" />
+        <item itemvalue="HTTP Request.products | UPDATE Products" />
+        <item itemvalue="npm.start:dev" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="14ad055e-204b-4e41-bd45-182b70e896c4" name="Changes" comment="" />
+      <created>1673053509466</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1673053509466</updated>
+      <workItem from="1673053510854" duration="1081000" />
+      <workItem from="1673072621648" duration="1147000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

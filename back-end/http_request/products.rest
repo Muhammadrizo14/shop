@@ -1,10 +1,10 @@
 
-####  Get all Products
+###  Get all Products
 GET http://localhost:3000/products/
 
 
-####  Get Products by Id
-GET http://localhost:3000/products/1
+###  Get Products by Id
+GET http://localhost:3000/products/2
 
 
 ###  Creating Products
@@ -13,28 +13,29 @@ Content-Type: application/json
 
 
 {
-  "title": "Futbolka",
-  "description": "Vashe zor",
+  "title": "Футболка",
+  "description": "Новый over-size",
   "image": "https://www.masterclass.com/cdn-cgi/image/width=1920,quality=75,format=webp/https://images.ctfassets.net/3s5io6mnxfqz/3N5iXB8yNlqVQS3xWdIIgX/fa0d654680fbd64eb5852dbbbcf4cca4/AdobeStock_303371265.jpeg",
   "price": "1$",
   "sale": "-",
-  "brend": "Samo",
-  "sex": "Mujik",
+  "brend": "Само",
+  "sex": "Мужской",
   "made": "Made in china",
-  "sell": "16 marta",
-  "season": "Qish"
+  "sell": "16 ш",
+  "categoryId": 1,
+  "season": "Зимное"
 }
 
-####  UPDATE Products
+###  UPDATE Products
 PATCH http://localhost:3000/products/1
 Content-Type: application/json
 
 
 {
-  "name": "i5-10400f-updated"
+  "image": "https://sdmall.uz/images/just-img-10.jpg"
 }
 
 
 
-####  Delete
+###  Delete
 DELETE http://localhost:3000/products/1

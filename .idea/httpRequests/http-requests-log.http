@@ -1,0 +1,81 @@
+GET http://localhost:3000/products/2
+
+<> 2023-01-07T113709.200.json
+
+###
+
+PATCH http://localhost:3000/products/2
+Content-Type: application/json
+
+{
+  "title": "Futbolkalar"
+}
+
+<> 2023-01-07T113306.200.json
+
+###
+
+PATCH http://localhost:3000/products/1
+Content-Type: application/json
+
+{
+  "title": "Futbolkalar",
+  "description": "Vashe zor",
+  "image": "https://www.masterclass.com/cdn-cgi/image/width=1920,quality=75,format=webp/https://images.ctfassets.net/3s5io6mnxfqz/3N5iXB8yNlqVQS3xWdIIgX/fa0d654680fbd64eb5852dbbbcf4cca4/AdobeStock_303371265.jpeg",
+  "price": "1$",
+  "sale": "-",
+  "brend": "Samo",
+  "sex": "Mujik",
+  "made": "Made in china",
+  "sell": "16 marta",
+  "season": "Qish"
+}
+
+<> 2023-01-07T113242.500.json
+
+###
+
+PATCH http://localhost:3000/products/1
+Content-Type: application/json
+
+{
+  "title": "Futblokkalar"
+}
+
+<> 2023-01-07T113155.500.json
+
+###
+
+PATCH http://localhost:3000/products/1
+Content-Type: application/json
+
+{
+  "title": "Futblokkalar"
+}
+
+<> 2023-01-07T112848.500.json
+
+###
+
+PATCH http://localhost:3000/products/1
+Content-Type: application/json
+
+{
+  "title": "Futblokkalar"
+}
+
+<> 2023-01-07T112822.500.json
+
+###
+
+PATCH http://localhost:3000/products/1
+Content-Type: application/json
+
+{
+  "name": "Futblokkalar"
+}
+
+<> 2023-01-07T112814.500.json
+
+###
+

@@ -1,18 +1,17 @@
-/*
-  Warnings:
+-- CreateTable
+CREATE TABLE `Category` (
+    `id` INTEGER NOT NULL AUTO_INCREMENT,
+    `title` VARCHAR(191) NOT NULL,
 
-  - You are about to drop the `UploadedFile` table. If the table is not empty, all the data it contains will be lost.
-
-*/
--- DropTable
-DROP TABLE `UploadedFile`;
+    PRIMARY KEY (`id`)
+) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
 -- CreateTable
 CREATE TABLE `Product` (
     `id` INTEGER NOT NULL AUTO_INCREMENT,
     `title` VARCHAR(191) NOT NULL,
-    `description` VARCHAR(191) NOT NULL,
-    `image` VARCHAR(191) NOT NULL,
+    `description` TEXT NOT NULL,
+    `image` TEXT NOT NULL,
     `price` VARCHAR(191) NOT NULL,
     `sale` VARCHAR(191) NOT NULL,
     `brend` VARCHAR(191) NOT NULL,
@@ -20,9 +19,11 @@ CREATE TABLE `Product` (
     `made` VARCHAR(191) NOT NULL,
     `sell` VARCHAR(191) NOT NULL,
     `season` VARCHAR(191) NOT NULL,
-    `user` VARCHAR(191) NOT NULL,
-    `category` VARCHAR(191) NOT NULL,
     `createdAt` DATETIME(3) NOT NULL DEFAULT CURRENT_TIMESTAMP(3),
+    `categoryId` INTEGER NOT NULL,
 
     PRIMARY KEY (`id`)
 ) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
+-- AddForeignKey
+ALTER TABLE `Product` ADD CONSTRAINT `Product_categoryId_fkey` FOREIGN KEY (`categoryId`) REFERENCES `Category`(`id`) ON DELETE RESTRICT ON UPDATE CASCADE;

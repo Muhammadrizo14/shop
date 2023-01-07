@@ -1,0 +1,31 @@
+
+###  Get all category
+GET http://localhost:3000/category/
+
+
+###  Get category by Id
+GET http://localhost:3000/category/1
+
+
+###  Creating category
+POST http://localhost:3000/category/
+Content-Type: application/json
+
+
+{
+  "title": "Futbolkaflar"
+}
+
+###  UPDATE category
+PATCH http://localhost:3000/category/1
+Content-Type: application/json
+
+
+{
+  "title": "Футболки"
+}
+
+
+
+###  Delete
+DELETE http://localhost:3000/category/2

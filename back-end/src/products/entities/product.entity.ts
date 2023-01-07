@@ -24,5 +24,7 @@ export class ProductEntity {
     @IsNotEmpty()
     season: string;
     @IsNotEmpty()
+    categoryId: number;
+    @IsNotEmpty()
     createdAt: Date;
 }
