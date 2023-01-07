@@ -1,0 +1,43 @@
+
+###  Get all User
+GET http://localhost:3033/user/
+#Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhbnZhcjAxNDIiLCJjcmVhdGVkQXQiOiIyMDIyLTAzLTI1VDEwOjE2OjQ1LjIxN1oiLCJ1cGRhdGVkQXQiOiIyMDIyLTAzLTI1VDEwOjE2OjQ1LjIxN1oiLCJkZWxldGVkQXQiOm51bGwsInJvbGVJZCI6MSwiaWF0IjoxNjQ5Nzc1NTM4LCJleHAiOjE2NDk4MTE1Mzh9.POZhpJAVewklkUuHYoezCOEiRHf79dVEedCEfIrwn7I
+
+
+###  Get User by Id
+GET http://localhost:3033/user/1
+#Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhbnZhcjAxNDIiLCJjcmVhdGVkQXQiOiIyMDIyLTAzLTI0VDEyOjQxOjEwLjU1NloiLCJ1cGRhdGVkQXQiOiIyMDIyLTAzLTI0VDEyOjQxOjEwLjU1NloiLCJkZWxldGVkQXQiOm51bGwsInJvbGVJZCI6MSwiaWF0IjoxNjQ4MTg3MDIwLCJleHAiOjE2NDgyMjMwMjB9.Zs20B5eCcWYJRQgjksa0QISPDSQePFnsgeukxByAUVU
+
+###  Creating User
+POST http://localhost:3033/user/
+Content-Type: application/json
+#Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhbnZhcjAxNDIiLCJjcmVhdGVkQXQiOiIyMDIyLTAzLTI1VDEwOjE2OjQ1LjIxN1oiLCJ1cGRhdGVkQXQiOiIyMDIyLTAzLTI1VDEwOjE2OjQ1LjIxN1oiLCJkZWxldGVkQXQiOm51bGwsInJvbGVJZCI6MSwiaWF0IjoxNjQ5Nzc1NTM4LCJleHAiOjE2NDk4MTE1Mzh9.POZhpJAVewklkUuHYoezCOEiRHf79dVEedCEfIrwn7I
+
+{
+  "name": "Hello",
+  "password": "Hello"
+}
+
+###  UPDATE User
+PATCH http://localhost:3033/user/1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoyLCJuYW1lIjoiYWRtaW4iLCJwYXNzd29yZCI6ImFkbWluIiwiY3JlYXRlZEF0IjoiMjAyMi0xMS0wNFQwOToyNjozMi4xMzhaIiwidXBkYXRlZEF0IjoiMjAyMi0xMS0wNFQwOToyNjozMi4xMzhaIn0sImlhdCI6MTY2NzU1NzY0OSwiZXhwIjoxNjY3NTkzNjQ5fQ.j4INjHu-nwnYk2J8xf6DCfrUUsCTVOGiMJgnGDWlrrU
+
+{
+  "name": "hello",
+  "password": "bye"
+}
+
+### DELETE MANY
+POST http://localhost:3033/user/delete-many
+Content-Type: application/json
+#Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhbnZhcjAxNDIiLCJjcmVhdGVkQXQiOiIyMDIyLTAzLTI0VDEyOjQxOjEwLjU1NloiLCJ1cGRhdGVkQXQiOiIyMDIyLTAzLTI0VDEyOjQxOjEwLjU1NloiLCJkZWxldGVkQXQiOm51bGwsInJvbGVJZCI6MSwiaWF0IjoxNjQ4MTg3MDIwLCJleHAiOjE2NDgyMjMwMjB9.Zs20B5eCcWYJRQgjksa0QISPDSQePFnsgeukxByAUVU
+
+{
+  "ids": [2, 6]
+}
+
+
+###  Delete
+DELETE http://localhost:3033/user/3
+#Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhbnZhcjAxNDIiLCJjcmVhdGVkQXQiOiIyMDIyLTAzLTIyVDE2OjE4OjI1LjM1OFoiLCJ1cGRhdGVkQXQiOiIyMDIyLTAzLTIyVDE2OjE4OjI1LjM1OVoiLCJkZWxldGVkQXQiOm51bGwsInJvbGVJZCI6MSwiaWF0IjoxNjQ4MDE0MTE2LCJleHAiOjE2NDgwNTAxMTZ9.wukV2-4R2z2hlPHqLY7Qs6BTDQ-ECwychTE5i2I0IO0

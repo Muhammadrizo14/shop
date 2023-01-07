@@ -1,0 +1,13 @@
+### Login
+POST http://localhost:3033/auth/login
+Content-Type: application/json
+
+{
+  "name": "admin",
+  "password": "admin"
+}
+
+
+### Profile
+GET http://localhost:3033/auth/profile
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoyLCJuYW1lIjoiYWRtaW4iLCJwYXNzd29yZCI6ImFkbWluIiwiY3JlYXRlZEF0IjoiMjAyMi0xMS0wNFQwOToyNjozMi4xMzhaIiwidXBkYXRlZEF0IjoiMjAyMi0xMS0wNFQwOToyNjozMi4xMzhaIn0sImlhdCI6MTY2NzU1NzY0OSwiZXhwIjoxNjY3NTkzNjQ5fQ.j4INjHu-nwnYk2J8xf6DCfrUUsCTVOGiMJgnGDWlrrU
